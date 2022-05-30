@@ -14,9 +14,9 @@ FetchContent_MakeAvailable(googletest)
 
 project(Vector)
 
-## set(SRC_LIST
-##     vector.cpp
-## )
+set(SRC_LIST
+  vector.cpp
+)
 
 add_executable(${PROJECT_NAME} main.cpp ${SRC_LIST})
 target_compile_options(${PROJECT_NAME} PUBLIC -Wall -Wpedantic -Wextra)
